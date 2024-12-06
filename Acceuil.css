@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #00111a, #002a4d);
+    background: linear-gradient(to bottom, #000428, #004e92);
     color: white;
     text-align: center;
 }
@@ -13,21 +13,22 @@ a {
     color: white;
 }
 
-h1, h2, p {
+h1, h2, h3, p {
     margin: 0;
-    padding: 10px 0;
+    padding: 0.5em 0;
 }
 
 /* Header */
 .header {
-    padding: 20px;
     background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .title {
     font-size: 2.5em;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .subtitle {
@@ -38,14 +39,17 @@ h1, h2, p {
 
 /* Navigation Bar */
 .navbar {
-    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    margin: 0;
 }
 
 .navbar ul {
     list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
-    padding: 0;
+    margin: 0;
 }
 
 .navbar li {
@@ -53,6 +57,7 @@ h1, h2, p {
 }
 
 .navbar a {
+    color: white;
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
@@ -63,35 +68,32 @@ h1, h2, p {
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* Main Content */
+/* Main Section */
 .main {
-    padding: 20px;
+    padding: 50px 20px;
 }
 
-.planet-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
+.intro {
+    margin-bottom: 40px;
 }
 
-/* Planet Cards */
-.planet-card {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+.cta {
+    margin-top: 20px;
 }
 
-.planet-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff9800;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+    transition: background 0.3s, transform 0.2s;
 }
 
-.planet-card h2 {
-    color: #ffcc00;
-    font-size: 1.5em;
+.button:hover {
+    background: #e65100;
+    transform: scale(1.05);
 }
 
 /* Footer */

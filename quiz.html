@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Solar System</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Quiz sur le Système Solaire</h1>
+        <p class="subtitle">Testez vos connaissances sur notre univers !</p>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="planets.html">Planètes</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="quiz-container">
+            <form id="quizForm">
+                <div class="quiz-question">
+                    <h2>1. Quelle est la plus grande planète de notre système solaire ?</h2>
+                    <div class="options">
+                        <label><input type="radio" name="question1" value="Mars"> Mars</label>
+                        <label><input type="radio" name="question1" value="Jupiter"> Jupiter</label>
+                        <label><input type="radio" name="question1" value="Saturn"> Saturne</label>
+                        <label><input type="radio" name="question1" value="Earth"> Terre</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <h2>2. Combien de planètes tournent autour du Soleil ?</h2>
+                    <div class="options">
+                        <label><input type="radio" name="question2" value="7"> 7</label>
+                        <label><input type="radio" name="question2" value="8"> 8</label>
+                        <label><input type="radio" name="question2" value="9"> 9</label>
+                        <label><input type="radio" name="question2" value="10"> 10</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Voir le résultat</button>
+            </form>
+        </section>
+
+        <section id="result" class="result hidden">
+            <h2>Votre Résultat</h2>
+            <p id="resultText"></p>
+            <button onclick="restartQuiz()" class="restart-btn">Recommencer le quiz</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Solar System Project. Tous droits réservés.</p>
+    </footer>
+
+    <script src="scripts/quiz.js"></script>
+</body>
+</html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sur le Système Solaire</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz sur le Système Solaire</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Quelle est la plus grande planète de notre système solaire ?</p>
+                <label><input type="radio" name="q1" value="Jupiter"> Jupiter</label><br>
+                <label><input type="radio" name="q1" value="Mars"> Mars</label><br>
+                <label><input type="radio" name="q1" value="Terre"> Terre</label><br>
+                <label><input type="radio" name="q1" value="Vénus"> Vénus</label>
+            </div>
+
+            <div class="question">
+                <p>2. Quelle planète est connue comme la planète rouge ?</p>
+                <label><input type="radio" name="q2" value="Mars"> Mars</label><br>
+                <label><input type="radio" name="q2" value="Jupiter"> Jupiter</label><br>
+                <label><input type="radio" name="q2" value="Saturne"> Saturne</label><br>
+                <label><input type="radio" name="q2" value="Neptune"> Neptune</label>
+            </div>
+
+            <div class="question">
+                <p>3. Quelle planète est la plus proche du Soleil ?</p>
+                <label><input type="radio" name="q3" value="Mercure"> Mercure</label><br>
+                <label><input type="radio" name="q3" value="Vénus"> Vénus</label><br>
+                <label><input type="radio" name="q3" value="Terre"> Terre</label><br>
+                <label><input type="radio" name="q3" value="Mars"> Mars</label>
+            </div>
+
+            <button type="submit">Soumettre</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
