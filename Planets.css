@@ -28,14 +28,20 @@ h1, h2, p {
 .title {
     font-size: 2.5em;
     text-transform: uppercase;
+<<<<<<< HEAD
     text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3); /* 3D shadow effect */
+=======
+>>>>>>> 03d0793d9745362a4b27fab0f793cd9fb6f15b23
 }
 
 .subtitle {
     font-size: 1.2em;
     margin-top: 10px;
     font-style: italic;
+<<<<<<< HEAD
     text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2); /* Soft shadow */
+=======
+>>>>>>> 03d0793d9745362a4b27fab0f793cd9fb6f15b23
 }
 
 /* Navigation Bar */
@@ -58,14 +64,21 @@ h1, h2, p {
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
+<<<<<<< HEAD
     transition: all 0.3s ease-in-out;
     position: relative;
+=======
+    transition: background 0.3s;
+>>>>>>> 03d0793d9745362a4b27fab0f793cd9fb6f15b23
 }
 
 .navbar a.active, .navbar a:hover {
     background: rgba(255, 255, 255, 0.2);
+<<<<<<< HEAD
     transform: scale(1.1); /* Slight zoom effect */
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3); /* 3D shadow on hover */
+=======
+>>>>>>> 03d0793d9745362a4b27fab0f793cd9fb6f15b23
 }
 
 /* Main Content */
@@ -73,7 +86,10 @@ h1, h2, p {
     padding: 20px;
 }
 
+<<<<<<< HEAD
 /* Planet Grid */
+=======
+>>>>>>> 03d0793d9745362a4b27fab0f793cd9fb6f15b23
 .planet-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -81,6 +97,7 @@ h1, h2, p {
     padding: 20px;
 }
 
+<<<<<<< HEAD
 /* Planet Cards with 3D effect */
 .planet-card {
     background: rgba(0, 0, 0, 0.7);
@@ -94,12 +111,29 @@ h1, h2, p {
 .planet-card:hover {
     transform: perspective(500px) rotateX(10deg) rotateY(10deg); /* 3D rotation effect */
     box-shadow: 0 20px 40px rgba(255, 255, 255, 0.5); /* More intense shadow */
+=======
+/* Planet Cards */
+.planet-card {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.planet-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+>>>>>>> 03d0793d9745362a4b27fab0f793cd9fb6f15b23
 }
 
 .planet-card h2 {
     color: #ffcc00;
     font-size: 1.5em;
+<<<<<<< HEAD
     text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3); /* Light 3D shadow */
+=======
+>>>>>>> 03d0793d9745362a4b27fab0f793cd9fb6f15b23
 }
 
 /* Footer */
@@ -108,5 +142,8 @@ h1, h2, p {
     padding: 10px 0;
     font-size: 0.9em;
     margin-top: 50px;
+<<<<<<< HEAD
     text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1); /* Subtle footer shadow */
+=======
+>>>>>>> 03d0793d9745362a4b27fab0f793cd9fb6f15b23
 }
