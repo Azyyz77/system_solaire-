@@ -28,12 +28,14 @@ h1, h2, p {
 .title {
     font-size: 2.5em;
     text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3); /* 3D shadow effect */
 }
 
 .subtitle {
     font-size: 1.2em;
     margin-top: 10px;
     font-style: italic;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2); /* Soft shadow */
 }
 
 /* Navigation Bar */
@@ -56,11 +58,14 @@ h1, h2, p {
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: all 0.3s ease-in-out;
+    position: relative;
 }
 
 .navbar a.active, .navbar a:hover {
     background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3); /* 3D shadow on hover */
 }
 
 /* Main Content */
@@ -68,6 +73,7 @@ h1, h2, p {
     padding: 20px;
 }
 
+/* Planet Grid */
 .planet-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -75,23 +81,25 @@ h1, h2, p {
     padding: 20px;
 }
 
-/* Planet Cards */
+/* Planet Cards with 3D effect */
 .planet-card {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Deep shadow for 3D look */
     transition: transform 0.3s, box-shadow 0.3s;
+    transform: perspective(500px) rotateX(0deg) rotateY(0deg);
 }
 
 .planet-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    transform: perspective(500px) rotateX(10deg) rotateY(10deg); /* 3D rotation effect */
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.5); /* More intense shadow */
 }
 
 .planet-card h2 {
     color: #ffcc00;
     font-size: 1.5em;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3); /* Light 3D shadow */
 }
 
 /* Footer */
@@ -100,4 +108,5 @@ h1, h2, p {
     padding: 10px 0;
     font-size: 0.9em;
     margin-top: 50px;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1); /* Subtle footer shadow */
 }
