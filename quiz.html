@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Solar System</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Quiz sur le Système Solaire</h1>
+        <p class="subtitle">Testez vos connaissances sur notre univers !</p>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="planets.html">Planètes</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="quiz-container">
+            <form id="quizForm">
+                <div class="quiz-question">
+                    <h2>1. Quelle est la plus grande planète de notre système solaire ?</h2>
+                    <div class="options">
+                        <label><input type="radio" name="question1" value="Mars"> Mars</label>
+                        <label><input type="radio" name="question1" value="Jupiter"> Jupiter</label>
+                        <label><input type="radio" name="question1" value="Saturn"> Saturne</label>
+                        <label><input type="radio" name="question1" value="Earth"> Terre</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <h2>2. Combien de planètes tournent autour du Soleil ?</h2>
+                    <div class="options">
+                        <label><input type="radio" name="question2" value="7"> 7</label>
+                        <label><input type="radio" name="question2" value="8"> 8</label>
+                        <label><input type="radio" name="question2" value="9"> 9</label>
+                        <label><input type="radio" name="question2" value="10"> 10</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Voir le résultat</button>
+            </form>
+        </section>
+
+        <section id="result" class="result hidden">
+            <h2>Votre Résultat</h2>
+            <p id="resultText"></p>
+            <button onclick="restartQuiz()" class="restart-btn">Recommencer le quiz</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Solar System Project. Tous droits réservés.</p>
+    </footer>
+
+    <script src="scripts/quiz.js"></script>
+</body>
+</html>
