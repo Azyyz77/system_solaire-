@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planètes - Système Solaire</title>
+    <link rel="stylesheet" href="Planets.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Les Planètes du Système Solaire</h1>
+        <p class="subtitle">Découvrez les caractéristiques fascinantes de chaque planète.</p>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="planets.html" class="active">Planètes</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="planet-grid">
+            <!-- Mercury -->
+            <div class="planet-card mercury">
+                <h2>Mercure</h2>
+                <p>Mercure est la planète la plus proche du Soleil et la plus petite de notre système solaire.</p>
+
+<body class="opening hide-UI view-2D zoom-large data-close controls-close">
+  <div id="navbar">
+    <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
+    <h1>3D Solar System<br><span>by <a href="https://twitter.com/JulianGarnier" target="_blank">@JulianGarnier</a></span></h1>
+    <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
+  </div>
+
+  <div id="data">
+    <a class="sun" title="sun" href="#sunspeed">Sun</a>
+    <a class="mercury" title="mercury" href="#mercuryspeed">Mercury</a>
+    <a class="venus" title="venus" href="#venusspeed">Venus</a>
+    <a class="earth active" title="earth" href="#earthspeed">Earth</a>
+    <a class="mars" title="mars" href="#marsspeed">Mars</a>
+    <a class="jupiter" title="jupiter" href="#jupiterspeed">Jupiter</a>
+    <a class="saturn" title="saturn" href="#saturnspeed">Saturn</a>
+    <a class="uranus" title="uranus" href="#uranusspeed">Uranus</a>
+    <a class="neptune" title="neptune" href="#neptunespeed">Neptune</a>
+  </div>
+
+  <script>
+    $(window).load(function() {
+      var body = $("body"),
+          universe = $("#universe"),
+          solarsys = $("#solar-system");
+      
+      // Initialisation
+      var init = function() {
+        body.removeClass('view-2D opening').addClass("view-3D").delay(2000).queue(function() {
+          $(this).removeClass('hide-UI').addClass("set-speed");
+          $(this).dequeue();
+        });
+      };
+
+      // Changer de vue
+      var setView = function(view) { universe.removeClass().addClass(view); };
+
+      // Toggle pour les données et les contrôles
+      $("#toggle-data").click(function(e) {
+        body.toggleClass("data-open data-close");
+        e.preventDefault();
+      });
+
+      $("#toggle-controls").click(function(e) {
+        body.toggleClass("controls-open controls-close");
+        e.preventDefault();
+      });
+
+      // Sélectionner les données d'une planète
+      $("#data a").click(function(e) {
+        var ref = $(this).attr("class");
+        solarsys.removeClass().addClass(ref);
+        $(this).parent().find('a').removeClass('active');
+        $(this).addClass('active');
+        e.preventDefault();
+      });
+
+      // Changer de vue, zoom et autres options
+      $(".set-view").click(function() { body.toggleClass("view-3D view-2D"); });
+      $(".set-zoom").click(function() { body.toggleClass("zoom-large zoom-close"); });
+      $(".set-speed").click(function() { setView("scale-stretched set-speed"); });
+      $(".set-size").click(function() { setView("scale-s set-size"); });
+      $(".set-distance").click(function() { setView("scale-d set-distance"); });
+
+      init();
+    });
+  </script>
+
+  <link rel="stylesheet" href="planets.css" type="text/css">
+
+  <div id="controls">
+    <label class="set-view">
+      <input type="checkbox"> View 3D/2D
+    </label>
+    <label class="set-zoom">
+      <input type="checkbox"> Zoom
+    </label>
+    <label>
+      <input type="radio" class="set-speed" name="scale" checked>
+      <span>Speed</span>
+    </label>
+    <label>
+      <input type="radio" class="set-size" name="scale">
+      <span>Size</span>
+    </label>
+    <label>
+      <input type="radio" class="set-distance" name="scale">
+      <span>Distance</span>
+    </label>
+  </div>
+
+  <div id="universe" class="scale-stretched">
+    <div id="galaxy">
+      <div id="solar-system" class="earth">
+        <!-- Planètes et informations -->
+        <div id="mercury" class="orbit">
+          <div class="pos">
+            <div class="planet">
+              <dl class="infos">
+                <dt>Mercury</dt>
+                <dd><span></span></dd>
+              </dl>
+
+            </div>
+
+            <!-- Venus -->
+            <div class="planet-card venus">
+                <h2>Vénus</h2>
+                <p>Vénus est connue pour son atmosphère dense et son effet de serre intense.</p>
+            </div>
+
+            <!-- Earth -->
+            <div class="planet-card earth">
+                <h2>Terre</h2>
+                <p>Notre planète abrite la vie grâce à ses conditions uniques.</p>
+            </div>
+
+            <!-- Mars -->
+            <div class="planet-card mars">
+                <h2>Mars</h2>
+                <p>Connue sous le nom de planète rouge, Mars est un sujet d'exploration scientifique intense.</p>
+            </div>
+
+            <!-- Jupiter -->
+            <div class="planet-card jupiter">
+                <h2>Jupiter</h2>
+                <p>Jupiter est la plus grande planète de notre système solaire avec une grande tache rouge.</p>
+            </div>
+
+            <!-- Saturn -->
+            <div class="planet-card saturn">
+                <h2>Saturne</h2>
+                <p>Saturne est célèbre pour ses magnifiques anneaux composés de glace et de poussière.</p>
+            </div>
+
+            <!-- Uranus -->
+            <div class="planet-card uranus">
+                <h2>Uranus</h2>
+                <p>Cette planète géante est inclinée sur le côté, lui donnant un aspect unique.</p>
+            </div>
+
+            <!-- Neptune -->
+            <div class="planet-card neptune">
+                <h2>Neptune</h2>
+                <p>Neptune est connue pour ses vents violents et sa couleur bleue profonde.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Solar System Project. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+
+          </div>
+        </div>
+        <div id="neptune" class="orbit">
+          <div class="pos">
+            <div class="planet">
+              <dl class="infos">
+                <dt>Neptune</dt>
+                <dd><span></span></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div id="sun">
+          <dl class="infos">
+            <dt>Sun</dt>
+            <dd><span></span></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" defer></script>
+  <script src="js/prefixfree.min.js" defer></script>
+  <script src="Planets.js" defer></script>
+</body>
+
