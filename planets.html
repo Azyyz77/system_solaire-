@@ -47,55 +47,7 @@
     <a class="neptune" title="neptune" href="#neptunespeed">Neptune</a>
   </div>
 
-  <script>
-    $(window).load(function() {
-      var body = $("body"),
-          universe = $("#universe"),
-          solarsys = $("#solar-system");
-      
-      // Initialisation
-      var init = function() {
-        body.removeClass('view-2D opening').addClass("view-3D").delay(2000).queue(function() {
-          $(this).removeClass('hide-UI').addClass("set-speed");
-          $(this).dequeue();
-        });
-      };
-
-      // Changer de vue
-      var setView = function(view) { universe.removeClass().addClass(view); };
-
-      // Toggle pour les données et les contrôles
-      $("#toggle-data").click(function(e) {
-        body.toggleClass("data-open data-close");
-        e.preventDefault();
-      });
-
-      $("#toggle-controls").click(function(e) {
-        body.toggleClass("controls-open controls-close");
-        e.preventDefault();
-      });
-
-      // Sélectionner les données d'une planète
-      $("#data a").click(function(e) {
-        var ref = $(this).attr("class");
-        solarsys.removeClass().addClass(ref);
-        $(this).parent().find('a').removeClass('active');
-        $(this).addClass('active');
-        e.preventDefault();
-      });
-
-      // Changer de vue, zoom et autres options
-      $(".set-view").click(function() { body.toggleClass("view-3D view-2D"); });
-      $(".set-zoom").click(function() { body.toggleClass("zoom-large zoom-close"); });
-      $(".set-speed").click(function() { setView("scale-stretched set-speed"); });
-      $(".set-size").click(function() { setView("scale-s set-size"); });
-      $(".set-distance").click(function() { setView("scale-d set-distance"); });
-
-      init();
-    });
-  </script>
-
-  <link rel="stylesheet" href="planets.css" type="text/css">
+  <link rel="stylesheet" href="Planets.css" type="text/css">
 
   <div id="controls">
     <label class="set-view">
