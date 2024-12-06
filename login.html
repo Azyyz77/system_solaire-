@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion - Système Solaire</title>
+  <style>
+    /* Estilos generales */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #000428, #004e92); /* Fond spatial */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Style du conteneur */
+    .login-container {
+      background: rgba(0, 0, 0, 0.8); /* Fond transparent */
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-container h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .login-container p {
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    /* Style des champs de saisie */
+    .login-container input {
+      display: block;
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1.5rem;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    .login-container input::placeholder {
+      color: #aaa;
+    }
+
+    /* Bouton de connexion */
+    .login-container button {
+      width: 100%;
+      padding: 0.8rem;
+      background: linear-gradient(90deg, #ff8c00, #ff0080);
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-container button:hover {
+      background: linear-gradient(90deg, #ff0080, #ff8c00);
+    }
+
+    /* Effet étoilé */
+    .stars {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+      opacity: 0.2;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div> <!-- Fond étoilé -->
+  <div class="login-container">
+    <h1>Bienvenue dans le Système Solaire</h1>
+    <p>Veuillez vous connecter pour explorer notre univers.</p>
+    <form action="#" method="POST">
+      <input type="text" name="username" placeholder="Nom d'utilisateur" required>
+      <input type="password" name="password" placeholder="Mot de passe" required>
+      <button type="submit">Se connecter</button>
+    </form>
+  </div>
+</body>
+</html>
