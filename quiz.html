@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sur le Système Solaire</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz sur le Système Solaire</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Quelle est la plus grande planète de notre système solaire ?</p>
+                <label><input type="radio" name="q1" value="Jupiter"> Jupiter</label><br>
+                <label><input type="radio" name="q1" value="Mars"> Mars</label><br>
+                <label><input type="radio" name="q1" value="Terre"> Terre</label><br>
+                <label><input type="radio" name="q1" value="Vénus"> Vénus</label>
+            </div>
+
+            <div class="question">
+                <p>2. Quelle planète est connue comme la planète rouge ?</p>
+                <label><input type="radio" name="q2" value="Mars"> Mars</label><br>
+                <label><input type="radio" name="q2" value="Jupiter"> Jupiter</label><br>
+                <label><input type="radio" name="q2" value="Saturne"> Saturne</label><br>
+                <label><input type="radio" name="q2" value="Neptune"> Neptune</label>
+            </div>
+
+            <div class="question">
+                <p>3. Quelle planète est la plus proche du Soleil ?</p>
+                <label><input type="radio" name="q3" value="Mercure"> Mercure</label><br>
+                <label><input type="radio" name="q3" value="Vénus"> Vénus</label><br>
+                <label><input type="radio" name="q3" value="Terre"> Terre</label><br>
+                <label><input type="radio" name="q3" value="Mars"> Mars</label>
+            </div>
+
+            <button type="submit">Soumettre</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
